@@ -5,8 +5,8 @@ import Profile from './Profile/profile';
 // import data from '../data/data.json';
 // import Statistics from './Statistics/Statistics';
 
-// import friends from '../data/friends.json';
-// import FriendList from './FriendList/FriendList';
+import friends from './data/friends.json';
+import FriendList from './FriendList/friendList';
 
 // import transactions from '../data/transactions.json';
 // import TransactionHistory from './TransactionHistory/TransactionHistory';
@@ -20,5 +20,6 @@ export const App = () => (
       avatar={user.avatar}
       stats={user.stats}
     />
+    <FriendList friends={friends} />
   </>
 );
