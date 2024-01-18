@@ -9,10 +9,10 @@ import {
 } from './stats.styled';
 import { getRandomHexColor } from './js/randomHex';
 
-const Statistics = ({ stats }) => {
+const Statistics = ({ stats, title }) => {
   return (
     <StatisticsSection>
-      <Title>Upload stats</Title>
+      {title && <Title>{title}</Title>}
       <StatList>
         {stats.map(stat => (
           <StatItem
