@@ -19,7 +19,7 @@ const Statistics = ({ stats }) => {
             key={stat.id}
             style={{ backgroundColor: getRandomHexColor() }}
           >
-            <Label>{stat.label}</Label>
+            {stat.label && <Label>{stat.label}</Label>}
             <Percentage>{stat.percentage}%</Percentage>
           </StatItem>
         ))}
